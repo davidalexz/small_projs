@@ -10,6 +10,32 @@ body {
     margin: 0;
 }
 
+header {
+    background-color: #373b69;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.search::placeholder {
+    color: #73785c;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #22254b;
+}
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -20,7 +46,9 @@ main {
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     width: 300px;
-    margin: 2rem;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .movie img {
@@ -44,4 +72,35 @@ main {
     background-color: #22254b;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+.movie-info span.orange {
+    color: orange;
+}
+.movie-info span.red {
+    color: rgb(234, 22, 22);
+}
+
+.overview {
+    background-color: white;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+.overview h4 {
+    margin-top: 0;
 }
