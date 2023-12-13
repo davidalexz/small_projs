@@ -7,4 +7,36 @@
 body {
     font-family: 'Poppins', 'sans-serif';
     margin: 0;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+canvas {
+    background-color: #fff;
+    border: 2px solid rebeccapurple;
+}
+
+.toolbox {
+    padding: 1rem;
+    width: 804px;
+    background-color: rebeccapurple;
+    border: 1px solid rebeccapurple;
+    display: flex;
+}
+
+.toolbox > * {
+    background-color: #fff;
+    border: none;
+    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+    cursor: pointer;
 }
