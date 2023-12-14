@@ -7,4 +7,74 @@
 body {
     font-family: 'Poppins', 'sans-serif';
     margin: 0;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pw-container {
+    background-color: rgb(64, 19, 110);
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pw-header {
+    padding: 1rem;
+}
+
+.pw {
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.pw button {
+    font-family: inherit;
+    background-color: #95006d;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+    color: white;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    font-weight: bold;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0, -80%);
+}
+
+.pw-body {
+    padding: 0 1rem 1rem;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem 0;
+    color: #eee;
+}
+
+.generate {
+    display: block;
+    background-color: #fd9e7e;
+    border: none;
+    font-weight: bold;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 1rem;
 }
