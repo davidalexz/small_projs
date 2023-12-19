@@ -10,29 +10,30 @@
         <div class="pw-container">
             <div class="pw-header">
                 <div class="pw">
+                    <span id="pw">jajdsadsad</span>
                     <button id="copy" class="copy">Copy</button>
                 </div>
             </div>
             <div class="pw-body">
                 <div class="form-control">
-                    <label for="length" id="length">Password length</label>
-                    <input type="number" value="15" min="4" max="40" />
+                    <label for="len">Password length</label>
+                    <input type="number" id="len" value="15" min="8" max="30" />
                 </div>
                 <div class="form-control">
-                    <label for="upper" id="upper">Contain Uppercase Letters</label>
-                    <input type="checkbox" />
+                    <label for="upper">Contain Uppercase Letters</label>
+                    <input id="upper" type="checkbox" />
                 </div>
                 <div class="form-control">
-                    <label for="lower" id="lower">Contain Lowercase Letters</label>
-                    <input type="checkbox" />
+                    <label for="lower">Contain Lowercase Letters</label>
+                    <input id="lower" type="checkbox" />
                 </div>
                 <div class="form-control">
-                    <label for="number" id="number">Contain Numbers</label>
-                    <input type="checkbox" />
+                    <label for="number">Contain Numbers</label>
+                    <input id="number" type="checkbox" />
                 </div>
                 <div class="form-control">
-                    <label for="symbol" id="symbol">Contain Symbols</label>
-                    <input type="checkbox" />
+                    <label for="symbol">Contain Symbols</label>
+                    <input id="symbol" type="checkbox" />
                 </div>
                 <button class="generate" id="generate">Generate Password</button>
             </div>
