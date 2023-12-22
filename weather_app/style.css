@@ -20,11 +20,12 @@ main {
 }
 
 main .city {
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
     margin-top: 1rem;
-    height: 200px;
-    width: 400px;
+    height: 60vh;
+    width: 50vw;
+    object-fit: cover;
 }
 
 main .condition {
